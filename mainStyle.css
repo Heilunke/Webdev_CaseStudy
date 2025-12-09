@@ -1649,14 +1649,37 @@ body.single-pet-image .pet-detail-image {
 }
 
 .date-box {
-    padding: 12px;
-    border: 2px solid #333;
-    border-radius: 5px;
-    font-weight: 700;
     flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 18px 20px;
+    position: relative;
+}
+
+.date-box input {
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    text-align: center;
+    color: #000000;
+}
+
+.date-box input:focus {
+    color: #000000;
+}
+
+.date-box input::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    color: black;
+    background: transparent;
+    cursor: pointer;
 }
 
 .time-section {
@@ -1828,4 +1851,5 @@ body.single-pet-image .pet-detail-image {
 
         .search-section.hidden {
             display: none;
+
         }
